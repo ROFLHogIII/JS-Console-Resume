@@ -5,7 +5,7 @@ console.log('Name: ' + uN);
 var amazon = {
     comp: "Amazon",
     job: "Packer",
-    desc: "I touch other people's packages",
+    desc: "I touched other people's packages",
 };
 var costco = {
     comp: "Costco",
@@ -18,7 +18,15 @@ var papa = {
     desc: "I delivered pizza to people who never tipped for a wadge that should be illigal.",
 };
 var work = [amazon, costco, papa];
+
+console.log('My Previous Experiance')
 for (let i in work) {
-        runfunction(work[i].comp, work[i].job, work[i].desc)
+    displayPosition(work[i].comp, work[i].job, work[i].desc)
+};
+
+
+
+function displayPosition(comp, job, desc) {
+    console.log(job + ' at ' + comp + ' - ' + desc)
 };
 console.log(work)
